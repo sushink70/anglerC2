@@ -5,16 +5,13 @@ import socket
 from _thread import *
 
 def main():
+    pass
 
-    
-
-class C2:
-    port = 31313
-    serverLocalIP = '0.0.0.0'
-    
-    def __init__(self) -> None:
-        pass
-    
+class C2sever:
+    def __init__(self):
+        self.port = 31313
+        self.serverLocalIP = '0.0.0.0'
+        
     def threaded_client(connection):
         connection.send(str.encode('Welcome to the Servern'))
         while True:
