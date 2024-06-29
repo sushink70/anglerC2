@@ -1,4 +1,4 @@
-#C2 server main file
+#C2 server core file
 
 from mmap import PROT_READ
 import os
