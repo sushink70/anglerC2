@@ -61,9 +61,6 @@ def run_command(session_id, command):
     response = requests.post(f"{MSF_RPC_URL}/sessions/{session_id}/shell_write", json=payload, headers=headers)
     return response.json()
 
-from rest_framework.decorators import api_view
-from rest_framework.response import Response
-
 @api_view(['GET'])
 def list_sessions(request):
     """List all active Meterpreter sessions."""
