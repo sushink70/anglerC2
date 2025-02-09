@@ -16,7 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from c2app.views import list_sessions, execute_command
+from c2app.views import list_empire_agents, execute_empire_command
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('sessions/', list_sessions, name="list_sessions"),
+    path('execute/', execute_command, name="execute_command"),
+    path('empire/agents/', list_empire_agents, name="list_empire_agents"),
+    path('empire/execute/', execute_empire_command, name="execute_empire_command"),
 ]
