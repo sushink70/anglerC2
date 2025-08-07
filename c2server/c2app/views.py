@@ -3,6 +3,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 import requests
 
+#load from .env
 EMPIRE_API_URL = "http://127.0.0.1:1337/api"
 EMPIRE_USERNAME = "admin"
 EMPIRE_PASSWORD = "empire123"
